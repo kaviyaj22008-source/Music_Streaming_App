@@ -1,0 +1,25 @@
+
+CREATE DATABASE musicapp;
+
+USE musicapp;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    email VARCHAR(100),
+    password VARCHAR(100)
+);
+
+CREATE TABLE songs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    song_name VARCHAR(100),
+    artist VARCHAR(100),
+    song_url VARCHAR(255)
+);
+
+INSERT INTO songs
+(song_name, artist, song_url)
+VALUES
+('Shape of You', 'Ed Sheeran', 'songs/shape.mp3'),
+('Perfect', 'Ed Sheeran', 'songs/perfect.mp3'),
+('Believer', 'Imagine Dragons', 'songs/believer.mp3');
