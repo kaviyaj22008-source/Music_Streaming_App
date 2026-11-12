@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Streaming App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎵 Music World</h1>
+    <p>Listen to Your Favourite Music</p>
+</header>
+
+<div class="container">
+
+    <h2>Welcome to Music World</h2>
+
+    <input type="text" id="search"
+    placeholder="Search your favourite songs">
+
+    <h2>Popular Songs</h2>
+
+    <div class="song">
+        <h3>Shape of You</h3>
+        <p>Ed Sheeran</p>
+        <button onclick="playSong('songs/shape.mp3')">
+        Play
+        </button>
+    </div>
+
+    <div class="song">
+        <h3>Perfect</h3>
+        <p>Ed Sheeran</p>
+        <button onclick="playSong('songs/perfect.mp3')">
+        Play
+        </button>
+    </div>
+
+    <div class="song">
+        <h3>Believer</h3>
+        <p>Imagine Dragons</p>
+        <button onclick="playSong('songs/believer.mp3')">
+        Play
+        </button>
+    </div>
+
+    <h2>Music Player</h2>
+
+    <audio id="player" controls>
+    </audio>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
